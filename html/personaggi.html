@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman Universe</title>
+
+    <!-- Font Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+<!-- CSS Personalizzato -->
+<link rel="stylesheet" href="../style/style.css"/>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Batman Universe</h1>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="../immagini/logo.webp" alt="Logo Batman" class="me-2" style="width: 40px; height: auto;">
+                <span class="fw-bold">Batman Universe</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catalogo</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="personaggi.html">Personaggi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="luoghi.html">Luoghi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="film_batman.html">Film</a></li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="filmDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Tecnologia</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="filmDropdown">
+                            <li><a class="dropdown-item" href="batMobile.html">Batmobile</a></li>
+                            <li><a class="dropdown-item" href="#">Batcaverna</a></li>
+                            <li><a class="dropdown-item" href="#">Gadget</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="accedi.html">Accedi</a></li>
+                </ul>
+
+
+                <!-- Search Bar -->
+                <form class="d-flex ms-4" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+<main class="container py-5">
+   <!-- Categorie Personaggi -->
+<div class="text-center mb-4">
+    <button class="btn btn-primary mx-2" id="btnBuoni" onclick="toggleCategory('Buoni')">Buoni</button>
+    <button class="btn btn-primary mx-2" id="btnAntagonisti" onclick="toggleCategory('antagonisti')">Antagonisti</button>
+    <button class="btn btn-primary mx-2" id="btnSecondari" onclick="toggleCategory('secondari')">Secondari</button>
+</div>
+
+    <!-- Catalogo Personaggi -->
+    <!-- Personaggi Principali -->
+    <div id="Buoni" class="category-section">
+        <h2 class="text-center mb-4">Personaggi Principali (Buoni)</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card Batman -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../immagini/personaggio_batman.jpg" class="card-img-top" alt="Batman">
+                    <div class="card-body">
+                        <h5 class="card-title">Batman</h5>
+                        <p class="card-text">Il Cavaliere Oscuro di Gotham, sempre pronto a proteggere la città dai criminali.</p>
+                        <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBatman">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Robin -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../immagini/robin_personaggio.jpeg" class="card-img-top" alt="Robin">
+                    <div class="card-body">
+                        <h5 class="card-title">Robin</h5>
+                        <p class="card-text">Il giovane alleato di Batman, sempre pronto a combattere al fianco del Cavaliere Oscuro.</p>
+                        <button class="btn btn-primary">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Batgirl -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../immagini/alfred_personaggio.jpeg" class="card-img-top" alt="Batgirl">
+                    <div class="card-body">
+                        <h5 class="card-title">Alfred</h5>
+                        <p class="card-text">Il fedele maggiordomo di Bruce Wayne.</p>
+                        <button class="btn btn-primary">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Antagonisti (Cattivi) -->
+    <div id="antagonisti" class="category-section d-none">
+        <h2 class="text-center mb-4">Antagonisti</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card Joker -->
+            <div class="col">
+                <div class="card h-100 border-danger">
+                    <img src="../immagini/joker_antagonista.jpeg" class="card-img-top" alt="Joker">
+                    <div class="card-body">
+                        <h5 class="card-title">Joker</h5>
+                        <p class="card-text">L'arcinemico di Batman, un criminale psicotico che ama diffondere il caos.</p>
+                        <button class="btn btn-primary">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Catwoman -->
+            <div class="col">
+                <div class="card h-100 border-danger">
+                    <img src="../immagini/Ra's al Ghul_antagonista.jpg" class="card-img-top" alt="Catwoman">
+                    <div class="card-body">
+                        <h5 class="card-title">Catwoman</h5>
+                        <p class="card-text">Selina Kyle, un'anti-eroina con un cuore diviso tra il bene e il male.</p>
+                        <button class="btn btn-primary">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Two-Face -->
+            <div class="col">
+                <div class="card h-100 border-danger">
+                    <img src="../immagini/pinguino_antagonista.jpeg" class="card-img-top" alt="Two-Face">
+                    <div class="card-body">
+                        <h5 class="card-title">Two-Face</h5>
+                        <p class="card-text">Harvey Dent, un ex procuratore che ora usa il suo destino deciso dal caso per combattere Batman.</p>
+                        <button class="btn btn-primary">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Personaggi Secondari -->
+    <div id="secondari" class="category-section d-none">
+        <h2 class="text-center mb-4">Personaggi Secondari</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card Nightwing -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../immagini/commissario_gordon_secondario.jpeg" class="card-img-top" alt="Nightwing">
+                    <div class="card-body">
+                        <h5 class="card-title">Nightwing</h5>
+                        <p class="card-text">Dick Grayson, ex Robin e ora un vigilante a Gotham con la sua identità di Nightwing.</p>
+                        <button class="btn btn-primary">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Red Hood -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../immagini/batwoman_secondario.jpeg" class="card-img-top" alt="Red Hood">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Hood</h5>
+                        <p class="card-text">Jason Todd, ex Robin, ora un vigilante più violento noto come Red Hood.</p>
+                        <button class="btn btn-primary">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Huntress -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../immagini/huntress_secondario.jpg" class="card-img-top" alt="Huntress">
+                    <div class="card-body">
+                        <h5 class="card-title">Huntress</h5>
+                        <p class="card-text">Helena Bertinelli, una vigilante che opera da sola e con un approccio spietato.</p>
+                        <button class="btn btn-primary">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paginazione -->
+    <nav aria-label="Paginazione" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link">Precedente</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Successivo</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+
+
+
+<script>
+    // Funzione per mostrare solo la categoria selezionata
+    function toggleCategory(category) {
+        // Nascondi tutte le categorie
+        document.querySelectorAll('.category-section').forEach(function(section) {
+            section.classList.add('d-none');
+        });
+
+        // Mostra la categoria selezionata
+        const categorySection = document.getElementById(category);
+        categorySection.classList.remove('d-none');
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Testo legale -->
+            <div class="col-md-8">
+                <p class="mb-1">
+                    Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici, sotto la tutela delle leggi internazionali sul copyright/trademark.
+                </p>
+                <p class="mb-0">
+                    Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+                </p>
+            </div>
+            <!-- Link Utili -->
+            <div class="col-md-4 text-center">
+                <h5 class="mb-2">Link Utili</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Credits</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Web Project Plan</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Informazioni</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman Universe</title>
+
+    <!-- Font Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+<!-- CSS Personalizzato -->
+<link rel="stylesheet" href="../style/style.css"/>
+
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Batman Universe</h1>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/index.html">
+                <img src="../immagini/logo.webp" alt="Logo Batman" class="me-2" style="width: 40px; height: auto;">
+                <span class="fw-bold">Batman Universe</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="catalogo.html">Catalogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personaggi.html">Personaggi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="luoghi.html">Luoghi</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="film_batman.html">Film</a></li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="filmDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Tecnologia</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="filmDropdown">
+                            <li><a class="dropdown-item" href="batMobile.html">Batmobile</a></li>
+                            <li><a class="dropdown-item" href="#">Batcaverna</a></li>
+                            <li><a class="dropdown-item" href="#">Gadget</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="accedi.html">Accedi</a></li>
+                </ul>
+
+                <!-- Search Bar -->
+                <form class="d-flex ms-4" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+<main class="container py-5">
+    <div class="row">
+ <!-- Filtri Laterali -->
+ <aside class="col-md-3 mb-4">
+    <div class="accordion" id="accordionFiltri">
+
+        <!-- Filtro per Serie -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filtraPerCategoria" aria-expanded="true">
+                    Ordina per categoria
+                </button>
+            </h2>
+            <div id="filtraSerie" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="classico" id="checkFumetto">
+                            <label class="form-check-label" for="checkFumetto">Fumetto</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="z" id="checkActionFigure">
+                            <label class="form-check-label" for="checkActionFigure">Action figure</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="super" id="checkVideogioco">
+                            <label class="form-check-label" for="checkVideogioco">Videogioco</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="gt" id="checkGadget">
+                            <label class="form-check-label" for="checkGadget">Gadget</label>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary mt-3">Applica Filtri</button>
+                </div>
+            </div>
+        </div>
+        <!-- Filtro per Edizione -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filtraEdizione" aria-expanded="false">
+                    Per Edizione
+                </button>
+            </h2>
+            <div id="filtraEdizione" class="accordion-collapse collapse">
+                <div class="accordion-body text-white">
+                    <p>Seleziona l'edizione del volume:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="ultimate" id="checkUltimate">
+                            <label class="form-check-label" for="checkUltimate">Ultimate Edition</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="evergreen" id="checkEvergreen">
+                            <label class="form-check-label" for="checkEvergreen">Evergreen Edition</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="extra" id="checkExtra">
+                            <label class="form-check-label" for="checkExtra">Extra Edition</label>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary mt-3">Applica Filtri</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filtro per Numero -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filtraNumero" aria-expanded="false">
+                    Per Numero
+                </button>
+            </h2>
+            <div id="filtraNumero" class="accordion-collapse collapse">
+                <div class="accordion-body text-white">
+                    <p>Filtra in base al numero</p>
+                    <label for="NumeriDa">Da: </label>
+                    <input type="number" id="NumeriDa" name="numeri" min="1" max="100" class="form-control mb-3">
+                    <label for="NumeriA">A: </label>
+                    <input type="number" id="NumeriA" name="numeri" min="1" max="100" class="form-control mb-3">
+                    <button class="btn btn-primary">Applica</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filtro per Uscita -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filtraUscita" aria-expanded="false">
+                    Per Uscita
+                </button>
+            </h2>
+            <div id="filtraUscita" class="accordion-collapse collapse">
+                <div class="accordion-body text-white">
+                    <p>Filtra in base all'anno</p>
+                    <label for="AnnoDal">Dal: </label>
+                    <input type="number" id="AnnoDal" name="anno" min="1984" max="2025" class="form-control mb-3">
+                    <label for="AnnoAl">Al: </label>
+                    <input type="number" id="AnnoAl" name="anno" min="1984" max="2025" class="form-control mb-3">
+                    <button class="btn btn-primary">Applica</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filtro per Disegnatore -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filtraDisegnatore" aria-expanded="false">
+                    Per Disegnatore
+                </button>
+            </h2>
+            <div id="filtraDisegnatore" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="Adams" id="checkAdams">
+                            <label class="form-check-label" for="checkAdams">Neal Adams</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="Miller" id="checkMiller">
+                            <label class="form-check-label" for="checkMiller">Frank Miller</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="Capullo" id="checkCapullo">
+                            <label class="form-check-label" for="checkCapullo">Greg Capullo</label>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary mt-3">Applica Filtri</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filtro per Antagonisti -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filtraAntagonisti" aria-expanded="false">
+                    Per Antagonista
+                </button>
+            </h2>
+            <div id="filtraAntagonisti" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="Joke" id="checkJoker">
+                            <label class="form-check-label" for="checkJoker">Joker</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="SpaventaPasseri" id="checkPasseri">
+                            <label class="form-check-label" for="checkPasseri">SpaventaPasseri</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="Pinguino" id="checkPinguino">
+                            <label class="form-check-label" for="checkPinguino">Pinguino</label>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary mt-3">Applica Filtri</button>
+                </div>
+            </div>
+        </div>
+        <!-- Filtro per ISBN -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filtraISBN" aria-expanded="false">
+                    Per ISBN
+                </button>
+            </h2>
+            <div id="filtraISBN" class="accordion-collapse collapse">
+                <div class="accordion-body text-white">
+                    <p>Inserisci l'ISBN:</p>
+                    <input type="text" id="isbnInput" class="form-control mb-3" placeholder="Es. 978-1974752812">
+                    <button class="btn btn-primary">Cerca</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+ <!-- Catalogo -->
+<section class="col-md-9">
+    <h2 class="text-center mb-5">Prodotti Disponibili</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+        <!-- Card 1: Batman The Killing Joke -->
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-header">Fumetto</div>
+                <img src="../immagini/killing_joke.jpg" class="card-img-top" alt="Batman The Killing Joke">
+                <div class="card-body">
+                    <h6 class="card-title">Batman: The Killing Joke</h6>
+                    <p class="card-text">Un capolavoro di Alan Moore, imperdibile!</p>
+                    <a href="pagina_item.html" class="btn btn-primary btn-sm">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Action Figure Batman -->
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-header">Action Figure</div>
+                <img src="../immagini/action_figure.avif" class="card-img-top" alt="Action Figure Batman">
+                <div class="card-body">
+                    <h6 class="card-title">Action Figure Batman</h6>
+                    <p class="card-text">Dettagliata e perfetta per collezionisti.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: La Batmobile -->
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-header">Veicolo</div>
+                <img src="../immagini/batMobile.jpg" class="card-img-top" alt="Batmobile">
+                <div class="card-body">
+                    <h6 class="card-title">La Batmobile 1989</h6>
+                    <p class="card-text">Il leggendario mezzo di Batman.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Batman Arkham Knight Videogioco -->
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-header">Videogioco</div>
+                <img src="../immagini/arkham_knight.jpg" class="card-img-top" alt="Batman Arkham Knight">
+                <div class="card-body">
+                    <h6 class="card-title">Batman: Arkham Knight</h6>
+                    <p class="card-text">Uno dei migliori giochi su Batman.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: Batman Year One -->
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-header">Fumetto</div>
+                <img src="../immagini/cavaliere_colpisce_ancora.jpeg" class="card-img-top" alt="Batman Year One">
+                <div class="card-body">
+                    <h6 class="card-title">Batman</h6>
+                    <p class="card-text">Il cavaliere oscuro colpisce ancora.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6: Batarang Replica -->
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-header">Gadget</div>
+                <img src="../immagini/batarang.avif" class="card-img-top" alt="Batarang Replica">
+                <div class="card-body">
+                    <h6 class="card-title">Batarang Replica</h6>
+                    <p class="card-text">Un gadget iconico da collezione.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paginazione -->
+    <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link">Precedente</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Successivo</a></li>
+        </ul>
+    </nav>
+</section>
+
+
+    </div>
+</main>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Testo legale -->
+            <div class="col-md-8">
+                <p class="mb-1">
+                    Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici, sotto la tutela delle leggi internazionali sul copyright/trademark.
+                </p>
+                <p class="mb-0">
+                    Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+                </p>
+            </div>
+            <!-- Link Utili -->
+            <div class="col-md-4 text-center">
+                <h5 class="mb-2">Link Utili</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Credits</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Web Project Plan</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Informazioni</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

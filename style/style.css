@@ -1,0 +1,154 @@
+
+
+
+/*
+Header
+======================== */
+header {
+    background-image: url("../immagini/sfondo_home1.jpg");
+    background-size: cover;
+    background-position: center top; /* Sposta il focus in alto */
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 4rem 0;
+    color: #fff;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* ========================
+   Stile del Box Filtri
+======================== */
+.filter-container {
+    background-color: #222; /* Sfondo scuro come le card */
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Titolo dei filtri */
+.filter-container h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Accordion dello stesso colore delle card */
+.accordion-item {
+    background-color: #333 !important;
+    border: none;
+}
+
+.accordion-button {
+    background-color: #444 !important;
+    color: white !important;
+    border: none;
+    font-weight: bold;
+}
+
+.accordion-button:hover {
+    background-color: #555 !important;
+}
+
+/* Lista filtri con colori scuri */
+.list-group-item {
+    background-color: #222 !important;
+    color: white !important;
+    border: 1px solid #444 !important;
+}
+
+/* Checkbox stile giallo Batman */
+.form-check-input {
+    accent-color: #ffcc00;
+}
+
+/* Bottone "Applica Filtri" */
+.btn-warning {
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-warning:hover {
+    background-color: #ff9900;
+}
+
+
+/* ========================
+   Cards - Stile Dark
+======================== */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #1c1c1c; /* Sfondo dark */
+    color: white; /* Testo bianco */
+}
+
+/* Effetto Hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Titolo Card */
+.card-title {
+    font-size: 1rem;
+    color: #ffcc00; /* Giallo Batman */
+}
+
+/* Testo sotto il titolo */
+.card-text {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+/* Stile dell'immagine */
+.card-img-top {
+    max-width: 80%;
+    height: 160px;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+/* Stile della testata della card */
+.card-header {
+    background-color: #333 !important;
+    color: #ffffff !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Centrare testo e bottone */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stile del pulsante */
+.btn-primary {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ff9900;
+    border-color: #ff9900;
+}
+
+
+
+
+
