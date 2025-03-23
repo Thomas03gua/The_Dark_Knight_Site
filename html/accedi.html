@@ -34,19 +34,26 @@
 </style>
 <body>
 
-    <!-- Header -->
-    <header class="bg-primary text-white py-5">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold">Batman Universe</h1>
-        </div>
-    </header>
+      <!-- Header -->
+<header class="bg-primary text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-1 fw-bold">The Dark Knight Site</h1>
+
+        <!-- Search Bar sotto al titolo -->
+        <form class="d-flex justify-content-center mt-4" role="search">
+            <input class="form-control me-2 w-50" type="search" placeholder="Cerca" aria-label="Search">
+            <button class="btn btn-warning" type="submit">Cerca</button>
+        </form>
+    </div>
+</header>
+
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="../immagini/logo.webp" alt="Logo Batman" class="me-2" style="width: 40px; height: auto;">
-                <span class="fw-bold">Batman Universe</span>
+                <img src="immagini/logo.webp" alt="Logo Batman" class="me-2" style="width: 40px; height: auto;">
+                <span class="fw-bold">The Dark Knight Site</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,29 +63,24 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link " href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catalogo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="personaggi.html">Personaggi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="luoghi.html">Luoghi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="film_batman.html">Film</a></li>
-                    <li class="nav-item dropdown active">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/catalogo.html">Catalogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/personaggi.html">Personaggi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/luoghi.html">Luoghi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/film_batman.html">Film</a></li>
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="filmDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Tecnologia</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="filmDropdown">
-                            <li><a class="dropdown-item" href="batMobile.html">Batmobile</a></li>
+                            <li><a class="dropdown-item" href="html/batmobile.html">Batmobile</a></li>
                             <li><a class="dropdown-item" href="#">Batcaverna</a></li>
                             <li><a class="dropdown-item" href="#">Gadget</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link active" href="accedi.html">Accedi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/accedi.html">Accedi</a></li>
                 </ul>
 
-
-                <!-- Search Bar -->
-                <form class="d-flex ms-4" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
-                    <button class="btn btn-primary" type="submit">Cerca</button>
-                </form>
+               
             </div>
         </div>
     </nav>

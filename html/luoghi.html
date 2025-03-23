@@ -35,29 +35,44 @@
     <!-- CSS Personalizzato -->
     <link rel="stylesheet" href="../style/style.css"/>
 
-    <style>
-        /* Mappa immagine */
-        #gothamMapContainer {
-            position: relative;
-            width: 100%;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        #gothamMap {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Marker */
-        .marker {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: red;
-            border-radius: 50%;
-            cursor: pointer;
-        }
+    <style>#gothamMapContainer {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #gothamMap {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Marker visivi */
+    .marker {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid white;
+        box-shadow: 0 0 5px black;
+    }
+    
+    /* Posizione dei marker in percentuale (relativa all'immagine) */
+    #markerWayne {
+        top: 5%; /* Adatta in base alla posizione reale */
+        left: 10%;
+    }
+    #markerArkham {
+        top: 32%;
+        left: 30%;
+    }
+    #markerGcpd {
+        top: 70%;
+        left: 34.7%;
+    }
+    
 
 
         /* Posizionamento dei marker sulla mappa */
@@ -68,12 +83,19 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="bg-primary text-white py-5">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold">Batman Universe</h1>
-        </div>
-    </header>
+      <!-- Header -->
+<header class="bg-primary text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-1 fw-bold">The Dark Knight Site</h1>
+
+        <!-- Search Bar sotto al titolo -->
+        <form class="d-flex justify-content-center mt-4" role="search">
+            <input class="form-control me-2 w-50" type="search" placeholder="Cerca" aria-label="Search">
+            <button class="btn btn-warning" type="submit">Cerca</button>
+        </form>
+    </div>
+</header>
+
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -94,7 +116,7 @@
                     <li class="nav-item"><a class="nav-link" href="personaggi.html">Personaggi</a></li>
                     <li class="nav-item"><a class="nav-link active" href="luoghi.html">Luoghi</a></li>
                     <li class="nav-item"><a class="nav-link" href="film_batman.html">Film</a></li>
-                    <li class="nav-item dropdown active">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="filmDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Tecnologia</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="filmDropdown">
@@ -105,32 +127,49 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="accedi.html">Accedi</a></li>
                 </ul>
-
-                <!-- Search Bar -->
-                <form class="d-flex ms-4" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
-                    <button class="btn btn-primary" type="submit">Cerca</button>
-                </form>
+                
             </div>
         </div>
     </nav>
 
-    <!-- Mappa -->
-    <div class="container py-5">
-        <h1 class="text-center">Mappa di Gotham City</h1>
-        <div class="text-center">
-            <div id="gothamMapContainer">
-                <img id="gothamMap" src="../immagini/gotham_city.png" alt="Mappa di Gotham City">
+  <!-- Mappa cliccabile -->
+<div class="container py-5">
+    <h1 class="text-center">Mappa di Gotham City</h1>
+    <div class="text-center">
+        <img src="../immagini/gotham_city.png" usemap="#gothamMap" alt="Mappa di Gotham City" class="img-fluid">
+        
+            <!-- MARKER VISIBILI -->
+    <div class="marker" id="markerWayne" onclick="showModal('wayneEstateModal')"></div>
+    <div class="marker" id="markerArkham" onclick="showModal('arkhamAsylumModal')"></div>
+    <div class="marker" id="markerGcpd" onclick="showModal('gcpdModal')"></div>
 
-                <!-- Marker per Wayne Estate -->
-                <div class="marker" id="wayneEstate" data-bs-toggle="modal" data-bs-target="#wayneEstateModal"></div>
-                <!-- Marker per Arkham Asylum -->
-                <div class="marker" id="arkhamAsylum" data-bs-toggle="modal" data-bs-target="#arkhamAsylumModal"></div>
-                <!-- Marker per GCPD -->
-                <div class="marker" id="gcpd" data-bs-toggle="modal" data-bs-target="#gcpdModal"></div>
-            </div>
-        </div>
+
+        <map name="gothamMap">
+            <!-- Wayne Estate -->
+            <area shape="rect" coords="95,115,100" alt="Wayne Estate" title="Wayne Estate"
+                  href="#" onclick="showModal('wayneEstateModal', event)">
+
+            <!-- Arkham Asylum -->
+            <area shape="circle" coords="310,383,30" alt="Arkham Asylum" title="Arkham Asylum"
+                  href="#" onclick="showModal('arkhamAsylumModal', event)">
+
+            <!-- GCPD -->
+            <area shape="circle" coords="347,773,30" alt="GCPD" title="GCPD"
+                  href="#" onclick="showModal('gcpdModal', event)">
+        </map>
     </div>
+</div>
+
+<!-- JS per le modali -->
+<script>
+    function showModal(id, event) {
+        if (event) event.preventDefault();
+        const modal = new bootstrap.Modal(document.getElementById(id));
+        modal.show();
+    }
+</script>
+
+
 
     <!-- Modale per Wayne Estate -->
     <div class="modal fade" id="wayneEstateModal" tabindex="-1" aria-labelledby="wayneEstateModalLabel" aria-hidden="true">
@@ -147,20 +186,7 @@
         </div>
     </div>
 
-    <!-- Modale per Wayne Manor -->
-    <div class="modal fade" id="wayneManorModal" tabindex="-1" aria-labelledby="wayneManorModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="wayneManorModalLabel">Wayne Manor</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Wayne Manor è la casa di Bruce Wayne, che nasconde la Batcave sotto di essa. Qui Batman inizia le sue missioni.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 
     <!-- Modale per Arkham Asylum -->
     <div class="modal fade" id="arkhamAsylumModal" tabindex="-1" aria-labelledby="arkhamAsylumModalLabel" aria-hidden="true">
@@ -218,7 +244,12 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+      
 
 </body>
 </html>
