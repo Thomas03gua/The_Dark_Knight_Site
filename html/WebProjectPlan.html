@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dark Knight Site</title>
+
+        <!-- Metadati Dublin Core -->
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+
+        <META name="DC.Title" content="Batman Universe - Catalogo Digitale"/>
+        <META name="DC.Creator" content="Thomas Gualandi"/>
+        <META name="DC.Subject" content="Batman, Catalogo, Personaggi, Film, Tecnologia"/>
+        <META name="DC.Description" content="Guida completa all'universo di Batman: storia, nemici, alleati, luoghi, film, fumetti e videogiochi dedicati al Cavaliere Oscuro."/>
+        <META name="DC.Publisher" content="Github Pages"/>
+        <META name="DC.Date" content="2025/03/22"/>
+        <META name="DC.Type" content="Catalogo web interattivo"/>
+        <META name="DC.Format" content="Sito web"/>
+        <META name="DC.Source" content="Batman - Personaggio creato da Bob Kane e Bill Finger per DC Comics"/>
+        <META name="DC.Language" content="It"/>
+
+    <!-- Font Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+
+    
+    
+<!-- CSS Personalizzato -->
+<link rel="stylesheet" href="../style/style.css"/>
+
+</head>
+
+<body>
+
+   <!-- Header -->
+<header class="bg-primary text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-1 fw-bold">The Dark Knight Site</h1>
+
+        <!-- Search Bar  -->
+        <form class="d-flex justify-content-center mt-4" role="search">
+            <input class="form-control me-2 w-50" type="search" placeholder="Cerca" aria-label="Search">
+            <button class="btn btn-warning" type="submit">Cerca</button>
+        </form>
+    </div>
+</header>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../immagini/logo.webp" alt="Logo Batman" class="me-2" style="width: 40px; height: auto;">
+                <span class="fw-bold">The Dark Knight Site</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catalogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personaggi.html">Personaggi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="luoghi.html">Luoghi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="film_batman.html">Film</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="filmDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Tecnologia</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="filmDropdown">
+                            <li><a class="dropdown-item" href="batmobile.html">Batmobile</a></li>
+                            <li><a class="dropdown-item" href="#">Batcaverna</a></li>
+                            <li><a class="dropdown-item" href="#">Gadget</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="accedi.html">Accedi</a></li>
+                </ul>
+
+               
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>WEB PROJECT PLAN</h1>
+    
+        <div class="section">
+          <u><h2>Idea (Abstract)</h2></u>
+          <p>Il progetto nasce con l’intento di realizzare un sito web interamente dedicato al mondo di Batman. La piattaforma introdurrà agli utenti chi è Batman, le sue caratteristiche e i suoi creatori, ed i personaggi del suo mondo.</p>
+          <p>Tra i contenuti principali del sito, sarà possibile esplorare l’evoluzione della Batmobile, nonché immergersi nella città di Gotham City, scoprendone i luoghi più celebri.</p>
+          <p>La piattaforma permetterà agli utenti di navigare attraverso le pagine del sito con pulsanti link, mentre per quanto riguarda il catalogo permetterà una ricerca avanzata suddivisa in categorie (fumetti, gadget, action figure, videogiochi), disegnatori, date di uscite e tant’altro ancora.</p>
+        </div>
+    
+        <div class="section">
+          <u><h2>Brief</h2></u>
+          <h3>Finalità</h3>
+          <ul>
+            <li>Informare gli utenti sulla storia di Batman, i suoi creatori e i personaggi principali del suo universo</li>
+            <li>Offrire contenuti speciali come evoluzione della Batmobile</li>
+            <li>Fornire un catalogo interattivo</li>
+          </ul>
+    
+          <h3>Target di riferimento</h3>
+          <p>Il progetto fa riferimento agli amanti del personaggio e del mondo di Batman, ma anche a chi ne ha sempre sentito parlare ma non ha mai avuto occasione di potersi informare in maniera esaustiva ed interattiva allo stesso tempo.</p>
+    
+          <h3>Accesso</h3>
+          <p>The Dark Knight Site sarà progettato per assicurare una visualizzazione veloce su qualsiasi dispositivo.</p>
+    
+          <h3>Contenuti e dati</h3>
+          <p>Il sito presenterà un’ampia raccolta di immagini, sarà presente un video, e le card che verranno occupate da delle immagini raffiguranti personaggi.</p>
+        </div>
+    
+        <div class="section">
+          <u><h2>Benchmark</h2></u>
+          <h3>Analisi di mercato</h3>
+          <p>Esistono diversi siti dedicati al mondo di Batman, ma la maggior parte si concentra principalmente sull’aspetto collezionistico (fumetti, gadget…), trascurando la narrativa del personaggio e del suo mondo.</p>
+    
+          <h3>DC Comics – Official Website</h3>
+          <p><a href="https://www.dc.com/characters/batman" target="_blank" style="color:#000; text-decoration: underline;">DC Comics – Official Website</a></p>
+          <p><strong>Punti di forza:</strong> Design professionale, contenuti ufficiali e costantemente aggiornati.</p>
+          <p><strong>Criticità:</strong> Batman occupa solo una piccola sezione del sito.</p>
+    
+          <h3>Batman Wiki (Fandom)</h3>
+          <p><a href="https://batman.fandom.com/wiki/Batman_Wiki" target="_blank" style="color:#000; text-decoration: underline;">Batman Wiki (Fandom)</a></p>
+          <p><strong>Punti di forza:</strong> Quantità enorme di informazioni, dettagli e collegamenti interni.</p>
+          <p><strong>Criticità:</strong> Design confusionario, contenuti soggettivi.</p>
+    
+          <h3>Come si distingue questo progetto?</h3>
+          <p>Esperienza narrativa completa, struttura organizzata, design coerente, catalogo filtrabile, contenuti selezionati e verificati.</p>
+        </div>
+    
+        <div class="section">
+          <u><h2>Struttura</h2></u>
+    
+          <h3>Mappa concettuale</h3>
+          <img src="../Mappa_Concettuale.png" alt="Mappa concettuale del sito">
+          <p>La mappa è composta da una parte introduttiva in cui viene presentato brevemente il personaggio di Batman e i suoi creatori.
+            Successivamente, la mappa si articola in cinque sezioni principali: Catalogo, Personaggi, Luoghi, Film e Tecnologia.
+            
+            Ogni personaggio è classificato in base alla sua importanza e al ruolo che ricopre.
+            All'interno della sezione dedicata ai luoghi, vengono identificati tre ambientazioni principali situate nella città di Gotham.
+            La sezione Film è suddivisa tra quelli diretti da Christopher Nolan e gli altri film in cui compare Batman.
+            Infine, la sezione Tecnologia raccoglie tre sotto-aree: i gadget, la Batmobile e la Batcaverna.</p>
+    
+          <h3>Schema delle dipendenze</h3>
+          <img src="../schema_dipendenze.png" alt="Schema delle dipendenze">
+    
+          <ul>
+            <li><strong>Homepage:</strong> introduzione al sito e la sua nascita, contesto, creatori</li>
+            <li><strong>Catalogo:</strong> Catalogo contenente una collezione che sia possibile suddidere per categorie, disegnatore, edizione, numero, data</li>
+            <li><strong>Personaggi:</strong> Suddivis in base al loro ruolo e alla loro importanza buoni, antagonisti, secondari</li>
+            <li><strong>Luoghi:</strong>Tappe principali nel mondo di Batman Gotham, Arkham, Wayne Estate, GCPD</li>
+            <li><strong>Film:</strong> trilogia di Nolan, altri adattamenti con presente Batman</li>
+            <li><strong>Tecnologia:</strong> Batcaverna, Batmobile, gadget</li>
+            <li><strong>Accesso:</strong> area personale utente dove è possibile per utente accedere o registrars</li>
+          </ul>
+
+          <h3>Categorie</h3>
+
+          <p>Ogni oggetto presente nel catalogo, come fumetti, gadget o action figure,
+             è corredato da una scheda descrittiva dettagliata. Di seguito un esempio, tratto da uno dei fumetti 
+             più celebri dell’universo di Batman:</p> 
+             <div style="background-color:#1c1e22;  color:#fff; font-family:'Roboto', sans-serif; border-radius:6px; 
+             max-width:600px; "> <h2 style="color:#f1b400;">Batman: The Killing Joke</h2> <ul style="list-style: none; 
+             padding: 0;"> 
+             <li><strong>Autore:</strong> Alan Moore</li> <li><strong>Disegnatore:</strong> Brian Bolland</li> 
+             <li><strong>Editore:</strong> DC Comics</li> <li><strong>Data di pubblicazione:</strong> Marzo 1988</li> 
+             <li><strong>Formato:</strong> Copertina rigida</li> <li><strong>Pagine:</strong> 64</li> 
+             <li><strong>Lingua:</strong> Italiano</li> <li><strong>Antagonista:</strong> Joker</li> 
+             <li><strong>Pubblico consigliato:</strong> Dai 14 anni in su</li> 
+            </ul> <h3 style="color:#f1b400; margin-top: 30px;">Trama</h3> 
+            <p style="line-height:1.6;">In questa tragica e intensa graphic novel, il Joker tenta di dimostrare che chiunque può diventare folle dopo "una brutta giornata".
+             Un racconto oscuro e psicologico che approfondisce le origini del clown del crimine e il rapporto con Batman.</p> 
+             </div>
+
+        </div>
+
+        <div class="section">
+            <u><h2>Layout</h2></u>
+
+            <!-- Wireframes -->
+<section id="wireframes" class="py-5">
+    <div class="container">
+        <h2 class="mb-4 "> Wireframes</h2>
+        <p>
+            Questa sezione mostra la rappresentazione grafica delle pagine principali e della loro struttura.
+        </p>
+
+        <!-- Carosello -->
+        <div id="wireframeCarousel" class="carousel slide mt-4" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false" data-bs-wrap="true">
+            <!-- Indicatori -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="7"></button>
+
+
+            </div>
+
+            <!-- Slide -->
+            <div class="carousel-inner data-bs-interval=3000">
+                <div class="carousel-item active">
+                    <h4 class="mb-3">Homepage</h4>
+                    <img src="../Wireframe/Home .jpg" class="d-block w-100" alt="Wireframe Home">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Catalogo</h4>
+                    <img src="../Wireframe/catalogo.jpg" class="d-block w-100" alt="Wireframe Catalogo">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Item</h4>
+                    <img src="../Wireframe/item.jpg" class="d-block w-100" alt="Wireframe Item">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Film</h4>
+                    <img src="../Wireframe/film.jpg" class="d-block w-100" alt="Wireframe Film">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Luoghi</h4>
+                    <img src="../Wireframe/luoghi.jpg" class="d-block w-100" alt="Wireframe Luoghi">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Personaggi</h4>
+                    <img src="../Wireframe/personaggi.jpg" class="d-block w-100" alt="Wireframe Personaggi">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Accedi</h4>
+                    <img src="../Wireframe/accedi.jpg" class="d-block w-100" alt="Wireframe Accedi">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Tecnologia</h4>
+                    <img src="../Wireframe/tecnologia.jpg" class="d-block w-100" alt="Wireframe Tecnologia">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#wireframeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Precedente</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#wireframeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Successivo</span>
+            </button>
+        </div>
+    </div>
+</section>
+              
+
+
+
+
+        </div>
+
+        <div class="section">
+        <u><h2>Usabilità</h2></u>
+            <ul>
+              <li>Navbar sticky permette di navigare all'intenrno di tutte le pagine presenti nel sito</li>
+              <li>Box tematici, per suddividere i contenuti in evidenza dal personaggio del giorno e dalle curiosità</li>
+              <li>Scrittura informativa con descrizioni brevi e con tono informale</li>
+              <li>Icone Bootstrap per accessibilità visiva</li>
+              <li>Si utilizza una palette cromatica composta da giallo,bianco e nero</li>
+            </ul>
+          </div>
+      
+          <div class="section">
+        <u><h2>Servizi</h2></u>
+      
+            <h3>Sistemi di browsing</h3>
+            <ul>
+              <li>Catalogo filtrabile per categoria, autore, data,e molto di più</li>
+              <li>Contenuti organizzati: fumetti, gadget, action figure, videogiochi</li>
+              <li>Timeline interattiva: per esplorare evoluzione della batmobile</li>
+              <li>Mappa interattiva di Gotham</li>
+              <li>Personaggi organizzati in base al ruolo ed alla importanza</li>
+              <li>Tecnologia organizzata in base al'utilizzo nel campo(covo,strada,combattimento)</li>
+            </ul>
+      
+            <h3>Utilities e strumenti</h3>
+            <ul>
+              <li>Hover su pulsanti, card, modali</li>
+              <li>Carousel e pagination per contenuti numerosi</li>
+              <li>Sticky Navbar: La barra di navigazione rimane fissa in alto per facilitare l’accesso alle varie sezioni</li>
+
+            </ul>
+      
+            <h3>Sviluppi futuri</h3>
+            <ul>
+              <li>Area community</li>
+              <li>Timeline interattiva sulle tute di Batman</li>
+              <li>Approfondimento più specifico sulla mappa di Gotham</li>
+              <li>Classifica degli scontri di batman più entusiasmanti </li>
+            </ul>
+          </div>
+      
+          <div class="section">
+        <u><h2>Bibliografia e Sitografia</h2></u>
+            <ul>
+              <li>Font Rajdhani – Google Fonts</li>
+              <li>Diagrams.net per mappe, e schede delle dipendenze</li>
+              <li>GitHub Pages per la pubblicazione</li>
+              <li>Visual Studio Code per lo sviluppo</li>
+            </ul>
+            <p>Per la progettazione del layout e della struttura del sito, ho fatto riferimento al sito di Alessando Rocchi sul topic di Dylan Dog e alle slide del corso.
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Testo legale -->
+            <div class="col-md-8">
+                <p class="mb-1">
+                    Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici, sotto la tutela delle leggi internazionali sul copyright/trademark.
+                </p>
+                <p class="mb-0">
+                    Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+                </p>
+            </div>
+            <!-- Link Utili -->
+            <div class="col-md-4 text-center">
+                <h5 class="mb-2">Link Utili</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Credits</a></li>
+                    <li><a href="WebProjectPlan.html" class="text-white text-decoration-none">Web Project Plan</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Informazioni</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
