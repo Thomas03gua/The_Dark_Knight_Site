@@ -1,9 +1,243 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.0.7">
   <diagram name="Page-1" id="vBeOQApifQSD83eSJQXN">
-    <mxGraphModel>
+    <mxGraphModel dx="1789" dy="1172" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="WvNes_QTrV_diSESBKVe-1" value="Campagna" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-49" y="56" width="120" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-2" value="Utente" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="259" y="56" width="122" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-4" value="crea" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="66" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-5" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="199" y="108" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-6" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="75" y="59" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-8" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="WvNes_QTrV_diSESBKVe-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="119" y="110" as="sourcePoint" />
+            <mxPoint x="256" y="97" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-9" value="Partecipazione" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="98" y="-60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-10" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="218" y="-28" as="sourcePoint" />
+            <mxPoint x="311" y="-28" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-11" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="312" y="52" as="sourcePoint" />
+            <mxPoint x="312" y="-25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-12" value="fa" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="303" y="-24" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-13" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3" y="-30.5" as="sourcePoint" />
+            <mxPoint x="96" y="-30.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-14" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3" y="51" as="sourcePoint" />
+            <mxPoint x="3" y="-26" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-15" value="Contributo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="259" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-16" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="322" y="220" as="sourcePoint" />
+            <mxPoint x="322" y="143" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-17" value="fa" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="313" y="167" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-19" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="259" y="144" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-20" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="15" y="144" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-21" value="Campione" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="326" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-23" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="199" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-24" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="319" y="24" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-25" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-26" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-59" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-27" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="34" y="-60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-28" value="Requisito" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-283" y="56" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-29" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-157" y="89" as="sourcePoint" />
+            <mxPoint x="-49" y="89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-31" value="1,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-103" y="92" width="53" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-32" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-162" y="59" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-34" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="247" as="sourcePoint" />
+            <mxPoint x="10" y="144" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-35" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="WvNes_QTrV_diSESBKVe-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="12" y="250" as="sourcePoint" />
+            <mxPoint x="132" y="248" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-44" value="Dato_Sensore" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-307" y="329" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-46" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-187" y="361" as="sourcePoint" />
+            <mxPoint x="98" y="361" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-143" y="357" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-47" value="Media" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-307" y="427" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-54" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="WvNes_QTrV_diSESBKVe-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-152" y="464" as="sourcePoint" />
+            <mxPoint x="162" y="455" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-57" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="38" y="363" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-58" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="420" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-59" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="329" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-60" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="427" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-61" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="225" y="337" as="sourcePoint" />
+            <mxPoint x="275" y="287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-62" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1" source="WvNes_QTrV_diSESBKVe-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="436" as="sourcePoint" />
+            <mxPoint x="160" y="456.71067811865476" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-63" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="291" y="287" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-64" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="228" y="351" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-65" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="355" y="187" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-66" value="Annotazione" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="512" y="217" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-67" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-77" y="-113" as="sourcePoint" />
+            <mxPoint x="554" y="-116" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-68" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-80" y="60" as="sourcePoint" />
+            <mxPoint x="-78" y="-107" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-69" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-81" y="59" as="sourcePoint" />
+            <mxPoint x="-50" y="59" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-70" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="561" y="215" as="sourcePoint" />
+            <mxPoint x="555" y="-116" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-71" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="383" y="104" as="sourcePoint" />
+            <mxPoint x="506" y="104" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-72" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="512" y="213" as="sourcePoint" />
+            <mxPoint x="509" y="106" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-73" value="Label" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-293" y="193" width="110" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-74" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="WvNes_QTrV_diSESBKVe-73">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-101" y="185" as="sourcePoint" />
+            <mxPoint x="-51" y="135" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-75" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-76" y="-146" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-76" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="564" y="181" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-77" value="0,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="383" y="71" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-78" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="447" y="181" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-79" value="1,N" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-103" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WvNes_QTrV_diSESBKVe-80" value="1,1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-179" y="217" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
